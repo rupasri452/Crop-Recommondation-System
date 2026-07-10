@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prediction Result</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<h2 class="logo">🌱 OptiCrop</h2>
+
+<ul>
+
+<li><a href="/">Home</a></li>
+
+<li><a href="/about">About</a></li>
+
+<li><a href="/findcrop">Find Crop</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="result-section">
+
+<div class="result-card">
+
+<div class="tick">
+
+🌾
+
+</div>
+
+<h1>Crop Recommendation</h1>
+
+<p>
+
+Based on the soil nutrients and climatic conditions you entered,
+
+our Machine Learning model recommends the following crop:
+
+</p>
+
+<div class="crop-name">
+
+{{ prediction }}
+
+</div>
+
+<div class="success-message">
+
+✅ Prediction completed successfully
+
+</div>
+
+<br>
+
+<a href="/findcrop">
+
+<button>
+
+🔄 Predict Another Crop
+
+</button>
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 OptiCrop | AI Powered Crop Recommendation System
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
